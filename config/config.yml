@@ -1,0 +1,19 @@
+# config/application.yml
+defaults: &defaults
+
+development:
+  <<: *defaults
+  database:
+    adress:
+      - '127.0.0.1:27030'
+    name: 'StartKit'
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+  database:
+    adress:
+      - '127.0.0.1:27030'
+    name: 'StartKit'
