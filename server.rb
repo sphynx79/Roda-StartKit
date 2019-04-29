@@ -3,6 +3,7 @@
 # warn_indent: true
 # frozen_string_literal: true
 
+require 'pathname'
 APP_ROOT = Pathname.new(File.expand_path(__dir__)).freeze
 APP_NAME = APP_ROOT.basename.to_s.freeze
 VERSION = File.read("./VERSION").strip
